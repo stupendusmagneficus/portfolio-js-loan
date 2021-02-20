@@ -47,9 +47,8 @@ window.addEventListener('DOMContentLoaded', function () {
     activeClass: 'feed__item-active'
   });
   feedSlider.init();
-  var player = new _playVideo["default"]('.showup .play', '.overlay');
-  player.init();
-  var difference = new _difference["default"]('.officerold', '.officernew', '.officer__card-item');
-  difference.init();
+  new _playVideo["default"]('.showup .play', '.overlay').init();
+  new _playVideo["default"]('.module__video-item .play', '.overlay').init();
+  new _difference["default"]('.officerold', '.officernew', '.officer__card-item').init();
   new _form["default"]('.form').init();
 });
