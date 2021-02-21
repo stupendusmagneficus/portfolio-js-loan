@@ -10,6 +10,10 @@ var _difference = _interopRequireDefault(require("./modules/difference"));
 
 var _form = _interopRequireDefault(require("./modules/form"));
 
+var _showInfo = _interopRequireDefault(require("./modules/showInfo"));
+
+var _download = _interopRequireDefault(require("./modules/download"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -51,4 +55,6 @@ window.addEventListener('DOMContentLoaded', function () {
   new _playVideo["default"]('.module__video-item .play', '.overlay').init();
   new _difference["default"]('.officerold', '.officernew', '.officer__card-item').init();
   new _form["default"]('.form').init();
+  new _showInfo["default"]('.plus__content').init();
+  new _download["default"]('.download').init();
 });
